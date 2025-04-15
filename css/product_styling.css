@@ -1,0 +1,20 @@
+
+/* Center product cards in each section */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures cards wrap to the next line if needed */
+  }
+  
+  .row .card {
+    margin: 10px; /* Add spacing between cards */
+  }
+
+
+  
+/*scroll-margin-top ensures that when the browser scrolls to an element (e.g., #men-section), it stops a bit earlier, leaving space above the element.*/
+#men-section,
+#women-section,
+#children-section {
+  scroll-margin-top: 80px;
+}
