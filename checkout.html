@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Running Shoes Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styling.css">
+  <link rel="stylesheet" href="css/checkout_styling.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="assets/images/logo.png" alt="image" width="60" height="auto" class="logo">
+        <a class="navbar-brand" href="home.html"> Running Shoe Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            <li class="nav-item"><a class="nav-link active" href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container">
+      <h2>Checkout</h2>
+      <form id="checkoutForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+  
+        <label for="address">Shipping Address</label>
+        <input type="text" id="address" required>
+  
+        <label for="city">City</label>
+        <input type="text" id="city" required>
+  
+        <label for="zip">ZIP Code</label>
+        <input type="text" id="zip" required>
+  
+        <div class="order-summary">
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+          </div>
+        </div>
+        <!-- Place order button -->
+        <button class="btn btn-success" type="submit">Place Order</button>
+        <!-- Cancel button to clear the form -->
+        <button id="cancelBtn" class="btn btn-danger" type="button">Cancel Order</button>
+        
+        <div class="success" id="successMessage">Thank you! Your order has been placed.</div>
+      </form>
+    </div>
+
+    <footer class="text-center text-white bg-dark p-3 mt-5">
+      <p>&copy; 2025 Running Shoe Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
